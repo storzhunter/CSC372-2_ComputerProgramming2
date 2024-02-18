@@ -5,7 +5,7 @@ public class BankAccount {
 	protected int    accountID;
 	protected double balance;
 	
-	public void constructor() {
+	public BankAccount() {
 		balance = 0;
 	}
 	
@@ -16,7 +16,7 @@ public class BankAccount {
 	}
 	
 	public void withdrawal (double subAmount) {
-		if (balance <= subAmount) {
+		if (balance < subAmount) {
 			System.out.println("Insufficient funds");
 		}
 		else {

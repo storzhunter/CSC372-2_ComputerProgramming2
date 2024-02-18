@@ -1,6 +1,7 @@
 
 public class CheckingAccount extends BankAccount {
 	double interestRate;
+	double interestEarned;
 	
 	public CheckingAccount() {
 		interestRate = 0.0;
@@ -9,6 +10,15 @@ public class CheckingAccount extends BankAccount {
 	public void setInterestRate(double rate) {
 		interestRate = rate;
 		System.out.printf("Iterest rate set to %.2f%%.\n", interestRate);
+	}
+	
+	public void calcInterestEarned() {
+		interestEarned = balance * (interestRate / 100);
+		balance = balance + (balance * (interestRate / 100));
+	}
+	
+	public double getInterestEarned() {
+		return interestEarned;
 	}
 	
 	public double getInterestRate() {
@@ -29,16 +39,10 @@ public class CheckingAccount extends BankAccount {
 	}
 	
 	@Override
-	public void deposit(double addAmount) {
-		balance = balance + addAmount;
-		System.out.printf("You have deposited $%.2f.\n", addAmount);
-		System.out.printf("Your new balance is $%.2f.", balance);
-	}
-	
-	@Override
 	public void accountSummary() {
 		super.accountSummary();
-		System.out.printf("Interest rate: %.2f%%", interestRate);
+		System.out.printf("Interest rate: %.2f%%\n", interestRate);
+		System.out.printf("Interest earned: $%.2f\n", interestEarned);
 	}
 	
 
