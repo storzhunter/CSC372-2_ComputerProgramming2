@@ -27,7 +27,7 @@ public class BankTest {
 		newBankAccount.setFirstName(userFirstName);
 		
 		//Gets first name
-		System.out.println("\nYou entered " + newBankAccount.getFirstName());
+		System.out.println("\nYou entered: " + newBankAccount.getFirstName());
 		System.out.println();
 		
 		//Sets last name
@@ -36,7 +36,7 @@ public class BankTest {
 		newBankAccount.setLastName(userLastName);
 		
 		//Gets last name
-		System.out.println("\nYou entered " + newBankAccount.getLastName());
+		System.out.println("\nYou entered: " + newBankAccount.getLastName());
 		System.out.println();
 		
 		//Sets account ID
@@ -97,7 +97,7 @@ public class BankTest {
 		newCheckAccount.setFirstName(userFirstName);
 		
 		//Gets first name
-		System.out.println("\nYou entered " + newCheckAccount.getFirstName());
+		System.out.println("\nYou entered: " + newCheckAccount.getFirstName());
 		System.out.println();
 		
 		//Sets last name
@@ -106,7 +106,7 @@ public class BankTest {
 		newCheckAccount.setLastName(userLastName);
 		
 		//Gets last name
-		System.out.println("\nYou entered " + newCheckAccount.getLastName());
+		System.out.println("\nYou entered: " + newCheckAccount.getLastName());
 		System.out.println();
 		
 		//Sets account ID
